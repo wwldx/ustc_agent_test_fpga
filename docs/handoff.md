@@ -1,0 +1,30 @@
+# Handoff
+
+Continuity schema: 0.1
+
+## Current Status
+
+Initial scaffold is in place. No experiment has been run yet.
+
+## Most Useful Next Step
+
+Start with a paper-to-experiment loop:
+
+1. Read the local VerilogCoder PDF and summarize its workflow in `docs/paper_notes/verilogcoder.md`.
+2. Inspect `NVlabs/VerilogCoder` through the `third_party` workflow.
+3. Run the smallest safe example that only requires local simulation.
+4. Record exact commands, outputs, failures, and next actions in `docs/experiment_log.md`.
+
+## Before Handing Off
+
+- Run `git status --short --branch`.
+- Run `bash scripts/check_repo_safety.sh`.
+- Update `docs/AGENT_STATE.md`.
+- Update this file with the latest runnable command and known blockers.
+
+## Known Constraints
+
+- Repository is currently public.
+- Paper PDFs are stored outside Git.
+- No hardware execution path is approved yet.
+- First MacBook environment check found Git, Python 3.14, and Node, but no `iverilog`, Verilator, or Yosys.

@@ -1,0 +1,67 @@
+# Secrets and local auth
+.env
+.env.*
+OAI_CONFIG_LIST
+*.pem
+*.key
+*.crt
+id_rsa*
+id_ed25519*
+auth.json
+config.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node and general package managers
+node_modules/
+
+# Editors and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Papers and large artifacts
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Simulation and generated hardware artifacts
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+*.wdb
+*.jou
+*.log
+*.rpt
+*.bit
+*.hwh
+*.xsa
+*.dcp
+sim_build/
+build/
+dist/
+out/
+outputs/
+
+# Local experiment scratch
+scratch/
+tmp/
+local_data/
+models/
+weights/
+checkpoints/

@@ -1,0 +1,48 @@
+# Candidate Reading List
+
+This list starts with papers and repositories that are directly relevant to Verilog/RTL agents, agentic code generation, and hardware-design verification loops.
+
+## Core
+
+### VerilogCoder: Autonomous Verilog Coding Agents with Graph-based Planning and Abstract Syntax Tree (AST)-based Waveform Tracing Tool
+
+- Source: https://arxiv.org/abs/2408.08927
+- Code: https://github.com/NVlabs/VerilogCoder
+- Initial reason to read: baseline "Verilog coding agent" workflow; includes planning, simulation, and repair ideas.
+- Repro question: can the smallest example run locally without leaking API keys into the repo?
+
+### Exploring the Agentic Frontier of Verilog Code Generation
+
+- Source: https://arxiv.org/abs/2603.19347
+- Initial reason to read: recent evidence on agentic wrappers for Verilog generation, including failure modes.
+- Repro question: what parts are evaluation methodology versus reusable engineering workflow?
+
+### ChipMATE
+
+- Source: https://arxiv.org/abs/2605.12857
+- Code: https://github.com/zhongkaiyu/ChipMATE
+- Initial reason to read: local/open-model and dual-agent reference-model direction; relevant to no-API or lab-intranet constraints.
+- Repro question: can the reference-model verification idea be reduced to a small deterministic skill?
+
+### LEGO: An LLM-Skill-Based Front-End Design Generation Platform
+
+- Source: https://arxiv.org/abs/2604.23355
+- Code: https://github.com/loujc/LEGO-An-LLM-Skill-Based-Front-End-Design-Generation-Platform
+- Initial reason to read: skill abstraction for circuit-design generation.
+- Repro question: even if public skills are incomplete, what should a local "circuit skill" contract look like?
+
+### MAGE: A Multi-Agent Engine for Automated RTL Code Generation
+
+- Source: https://arxiv.org/abs/2412.07822
+- Code: https://github.com/stable-lab/MAGE
+- Initial reason to read: open multi-agent RTL-generation architecture and benchmark comparison.
+- Repro question: which components can be replaced by Claude Code/Codex without losing verification discipline?
+
+## Comparison Axes
+
+- API dependency versus local model dependency.
+- Agent roles: planner, generator, verifier, debugger, reporter.
+- Verification loop: simulator, waveform tracing, reference model, testbench generation, or static analysis.
+- Evidence trace: what is logged, what is reproducible, and what remains a model claim.
+- Hardware boundary: simulation-only versus hardware-adjacent execution.
+- Transfer value for the graduation project: deterministic skill, credibility gate, human review, or presentation story.
