@@ -11,6 +11,8 @@ Keep PDF files outside this repository. Store concise notes, source links, repro
 | P1 | ChipMATE | https://arxiv.org/abs/2605.12857 and https://github.com/zhongkaiyu/ChipMATE | summarized in `chipmate.md` | Local/open-model route and dual-agent reference-model idea. |
 | P1 | LEGO | https://arxiv.org/abs/2604.23355 and https://github.com/loujc/LEGO-An-LLM-Skill-Based-Front-End-Design-Generation-Platform | source note pending | Skill-based circuit-design generation; useful for Codex/Claude skill adaptation ideas. |
 | P2 | MAGE | https://arxiv.org/abs/2412.07822 and https://github.com/stable-lab/MAGE | source note pending | Open multi-agent RTL-generation workflow; useful comparison against VerilogCoder. |
+| P0 | Verilog-Evolve | https://arxiv.org/abs/2605.26498 | summarized in `verilog_evolve.md` | Validation-gated skill evolution and multi-objective RTL feedback. |
+| P0 | HDLFORGE | https://arxiv.org/abs/2603.04646 | summarized in `hdlforge.md` | Adaptive model escalation and counterexample-to-micro-test workflow. |
 
 See also `comparison_matrix.md` for the current cross-paper synthesis.
 

@@ -143,6 +143,37 @@ Next:
 
 - Write focused notes for Verilog-Evolve and HDLFORGE.
 
+## 2026-06-28 - Verilog-Evolve And HDLFORGE Direction Review
+
+Goal: analyze the two newly downloaded PDFs and decide whether the current repository direction needs adjustment.
+
+Actions:
+
+- Read local PDFs:
+  - `2605.26498_Verilog-Evolve.pdf`
+  - `2603.04646_HDLFORGE.pdf`
+- Added:
+  - `docs/paper_notes/verilog_evolve.md`
+  - `docs/paper_notes/hdlforge.md`
+  - `docs/direction_review_20260628.md`
+  - `docs/skill_registry_design.md`
+- Updated prompt and skill contracts with repair/escalation fields.
+
+Result:
+
+- No major pivot needed.
+- Direction refinement: validation-gated skills and bounded escalation should be designed before larger agent reproduction.
+
+Blocked conclusions:
+
+- Neither paper has been reproduced.
+- No Yosys/ABC/formal/micro-test tooling was run.
+
+Next:
+
+- Run the existing Python oracle tests and repository safety checks.
+- Later, run mux2 simulation on a machine with `iverilog`.
+
 ## Template
 
 Date:

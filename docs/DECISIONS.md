@@ -66,6 +66,22 @@ Impact:
 - `tests/test_mux2_oracle.py` becomes the first Python test in the side repository.
 - Future work can compare RTL simulation output against oracle output once `iverilog` is available.
 
+## 2026-06-28 - Refine Direction With Skill Gates And Escalation Limits
+
+Decision: Keep the current toy/evidence-first direction, but add validation-gated skill design and bounded escalation policy before trying larger agent frameworks.
+
+Reason:
+
+- Verilog-Evolve shows that skill memory is useful only when grounded in deterministic evidence and validation gates.
+- HDLFORGE shows that stronger models should be invoked by diagnostic evidence, not used by default.
+- Both papers support the current small deterministic loop before full framework reproduction.
+
+Impact:
+
+- `docs/direction_review_20260628.md` records the direction review.
+- `docs/skill_registry_design.md` defines minimum skill metadata.
+- `prompts/verilog_agent_structured_loop.md` and `skills/verilog_compile_check_contract.md` now include repair/escalation fields.
+
 ## 2026-06-27 - Keep Verilog Agent Work In A Separate Repository
 
 Decision: Use this repository for Verilog/RTL agent experiments instead of placing code directly inside the graduation-project directory.

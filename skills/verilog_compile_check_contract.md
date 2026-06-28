@@ -15,6 +15,8 @@ top_module: optional string
 work_dir: path
 max_output_chars: integer, default 12000
 timeout_seconds: integer, default 30
+repair_attempt: integer, default 0
+repair_limit: integer, default 2
 ```
 
 ## Commands
@@ -38,6 +40,10 @@ compact_stdout:
 compact_stderr:
 evidence_level:
 blocked_claims:
+repair_attempt:
+repair_limit:
+escalation_recommendation:
+validation_cases:
 ```
 
 ## Safety Rules
@@ -47,6 +53,8 @@ blocked_claims:
 - Truncate long output and preserve the first and last relevant sections.
 - Treat compile success as syntax evidence only, not functional proof.
 - Treat simulation pass as testbench-specific evidence only, not hardware proof.
+- Stop after `repair_limit`; do not let an agent call tools indefinitely.
+- Recommend escalation instead of continuing when evidence is ambiguous.
 
 ## Relation To Graduation Project
 

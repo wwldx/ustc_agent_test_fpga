@@ -76,6 +76,24 @@ Continuity schema: 0.1
 - Write focused notes for Verilog-Evolve and HDLFORGE before chasing more broad search.
 - Add repair limits and stop conditions to prompt/skill contracts.
 
+## 2026-06-28 - Verilog-Evolve And HDLFORGE Refine But Do Not Redirect The Work
+
+### Key Understanding
+
+- Verilog-Evolve turns "skills" into validation-gated reusable artifacts backed by simulation/synthesis/timing/downstream evidence.
+- HDLFORGE turns "use a stronger model" into an evidence-driven escalation decision with bounded attempts.
+- Both papers support the current local direction: deterministic toy loop first, evidence parser next, larger agent frameworks later.
+
+### Decisions
+
+- Do not pivot to reproducing full Verilog-Evolve or HDLFORGE immediately.
+- Add repair limits, escalation recommendations, validation cases, and skill provenance to local contracts now.
+
+### Follow-ups
+
+- After `iverilog` is available, run the mux2 simulation and compare it with the Python oracle.
+- Then add a compact simulation-result parser and an evidence schema.
+
 ## 2026-06-27 - Separate Repo, Shared Method Bridge
 
 ### Key Understanding
