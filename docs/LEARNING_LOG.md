@@ -23,6 +23,24 @@ Continuity schema: 0.1
 - Implement the `verilog_compile_check` skill after `iverilog` is available on a runner.
 - Feed the same "compact deterministic evidence" pattern back into the graduation project's credibility-gate wording.
 
+## 2026-06-28 - ChipMATE Should Be Treated As A Local-Model Design Reference First
+
+### Key Understanding
+
+- ChipMATE is the most relevant paper so far for no-API / lab-local constraints because it uses open-source/local model routes and a Verilog + Python dual-agent idea.
+- It is not lightweight: model weights, vLLM, GPU resources, `iverilog`, and Python dependencies make it unsuitable as the first MacBook experiment.
+- The reference-model idea can be tested without full ChipMATE by adding a tiny Python oracle to a toy Verilog loop.
+
+### Decisions
+
+- Do not reproduce full ChipMATE on the current MacBook.
+- Use `experiments/toy_iverilog_loop/` as the first executable verification boundary.
+
+### Follow-ups
+
+- Run the toy loop on Mac mini / Linux / WSL2 after `iverilog` is available.
+- Add a Python oracle as the next small step after the toy loop passes.
+
 ## 2026-06-27 - Separate Repo, Shared Method Bridge
 
 ### Key Understanding

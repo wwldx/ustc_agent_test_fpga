@@ -19,10 +19,13 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 - Added `docs/toolchain_notes.md`, explaining `iverilog`, `vvp`, Verilator, Yosys, storage risk, and why the current MacBook should stay notes-only for now.
 - Drafted a simulation-only structured prompt in `prompts/verilog_agent_structured_loop.md`.
 - Drafted a deterministic skill contract in `skills/verilog_compile_check_contract.md`.
+- Summarized ChipMATE in `docs/paper_notes/chipmate.md`; current conclusion is to borrow the dual-agent/reference-model idea, not to run full local-model inference on the current MacBook.
+- Scaffolded the first executable toy loop under `experiments/toy_iverilog_loop/`.
 
 ## Next
 
-- Read and summarize ChipMATE next, because it is most relevant to no-API / local-model constraints.
+- Run `experiments/toy_iverilog_loop/scripts/run_local_check.sh` on a machine with `iverilog` / `vvp`.
+- Add a tiny Python oracle after the mux2 loop runs, to reflect the ChipMATE reference-model idea without model weights.
 - Clone or inspect `NVlabs/VerilogCoder` only after choosing a runner with enough disk and `iverilog`.
 - Run the smallest toy simulation loop before full VerilogCoder reproduction.
 - Decide whether the first executable experiment should use VerilogCoder directly or a small local toy loop that only runs `iverilog`.
@@ -41,6 +44,9 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
   - VerilogCoder PDF size about 730 KB, 8 pages.
   - Agentic Frontier PDF size about 194 KB, 9 pages.
 - 2026-06-28 paper notes were created from local PDFs; no toolchain installation, third-party clone, model download, or simulation run was performed.
+- 2026-06-28 ChipMATE was summarized from arXiv/GitHub public sources; no model weights, vLLM server, upstream clone, or simulation run was performed.
+- 2026-06-28 toy loop scaffold was added; current MacBook is expected to report `tool_missing` until `iverilog` is available.
+- 2026-06-28 `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh` was run in a temp copy on the current MacBook -> `status=tool_missing`, `missing=iverilog`, `blocked_claims=simulation_not_run`.
 - 2026-06-27 `bash scripts/check_repo_safety.sh` passed.
 - 2026-06-27 `bash scripts/doctor.sh` ran on the first MacBook checkout: Git, Python 3.14, and Node are available; `iverilog`, Verilator, and Yosys are missing.
 - Initial files are scaffolded only; no Verilog agent experiment has been run yet.

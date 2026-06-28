@@ -23,6 +23,7 @@ This list starts with papers and repositories that are directly relevant to Veri
 
 - Source: https://arxiv.org/abs/2605.12857
 - Code: https://github.com/zhongkaiyu/ChipMATE
+- Status: summarized in `chipmate.md`.
 - Initial reason to read: local/open-model and dual-agent reference-model direction; relevant to no-API or lab-intranet constraints.
 - Repro question: can the reference-model verification idea be reduced to a small deterministic skill?
 

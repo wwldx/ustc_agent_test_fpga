@@ -63,6 +63,38 @@ Next:
 - Choose Mac mini, lab Linux, or WSL2 as the first runner.
 - Install/check `iverilog` there and run the toy loop.
 
+## 2026-06-28 - ChipMATE Note And Toy Loop Scaffold
+
+Goal: continue useful work without installing toolchains on the space-limited MacBook.
+
+Actions:
+
+- Wrote `docs/paper_notes/chipmate.md`.
+- Updated paper indexes and comparison matrix.
+- Added `experiments/toy_iverilog_loop/` with mux2 spec, RTL, testbench, run script, and expected evidence.
+
+Result:
+
+- The repository now has a first executable experiment package ready for a runner with `iverilog`.
+- Current MacBook remains notes-only.
+
+Evidence:
+
+- ChipMATE public sources describe a local/open-model dual-agent workflow with Verilog and Python agents.
+- Toy loop has a self-checking testbench and a script that records `tool_missing` instead of failing hard when `iverilog` is absent.
+- Temp-copy dry run on the current MacBook produced `status=tool_missing`, `missing=iverilog`, `blocked_claims=simulation_not_run`.
+
+Blocked conclusions:
+
+- ChipMATE has not been reproduced.
+- No model weights were downloaded.
+- The toy loop has not been simulated on this MacBook.
+
+Next:
+
+- Sync to the real repository and run safety checks.
+- On a runner with `iverilog`, execute `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh`.
+
 ## Template
 
 Date:

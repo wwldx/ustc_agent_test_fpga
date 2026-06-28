@@ -17,6 +17,7 @@ Each experiment directory should stay small and reproducible.
 - `chipmate_study/`: study local-model and reference-model ideas.
 - `lego_skill_study/`: extract skill-contract ideas from LEGO.
 - `mage_study/`: compare MAGE-style multi-agent workflow.
+- `toy_iverilog_loop/`: first tiny simulation-only loop, intended to run before full paper reproduction.
 
 ## First Executable Experiment
 

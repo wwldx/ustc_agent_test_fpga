@@ -34,6 +34,22 @@ Impact:
 - `skills/verilog_compile_check_contract.md` defines the deterministic verification boundary.
 - Full VerilogCoder reproduction is deferred until the toy loop and toolchain runner are stable.
 
+## 2026-06-28 - Reduce ChipMATE To A Tiny Reference-Model Lesson First
+
+Decision: Use ChipMATE as a design reference for no-API/local-model and dual-agent validation, but do not attempt full reproduction on the current MacBook.
+
+Reason:
+
+- Full ChipMATE can require model weights, vLLM servers, GPU/VRAM, and simulator tooling.
+- The current MacBook is space-constrained and lacks `iverilog`.
+- The useful idea can be tested first with a tiny deterministic loop and later a Python oracle.
+
+Impact:
+
+- `docs/paper_notes/chipmate.md` records the paper/repo lesson.
+- `experiments/toy_iverilog_loop/` becomes the first stepping stone.
+- A future second step can add a small Python oracle before any local-model deployment.
+
 ## 2026-06-27 - Keep Verilog Agent Work In A Separate Repository
 
 Decision: Use this repository for Verilog/RTL agent experiments instead of placing code directly inside the graduation-project directory.

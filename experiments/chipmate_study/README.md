@@ -20,6 +20,7 @@ ChipMATE is relevant when API-based agents are undesirable because of secrecy, o
 
 ## Next Steps
 
-1. Write `docs/paper_notes/chipmate.md`.
-2. Inspect upstream dependency and model-weight requirements.
+1. Paper/repo note is done: `docs/paper_notes/chipmate.md`.
+2. Do not download model weights or create a vLLM environment on the current MacBook.
 3. Prototype a tiny reference-model verification loop without downloading large weights.
+4. Use `experiments/toy_iverilog_loop/` as the first deterministic stepping stone.
