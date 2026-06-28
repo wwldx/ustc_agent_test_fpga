@@ -14,6 +14,8 @@ Keep PDF files outside this repository. Store concise notes, source links, repro
 
 See also `comparison_matrix.md` for the current cross-paper synthesis.
 
+See `recent_research_radar_20260628.md` for newer papers, repositories, and practical issue-discussion signals beyond the first core readings.
+
 ## Note Template
 
 ```md

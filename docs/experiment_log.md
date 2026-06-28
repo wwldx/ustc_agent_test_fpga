@@ -119,6 +119,30 @@ Next:
 
 - On a runner with `iverilog`, compare simulation cases against the oracle truth table.
 
+## 2026-06-28 - Recent Research Radar
+
+Goal: expand the literature/community map beyond the initial five core papers.
+
+Actions:
+
+- Searched for recent Verilog/RTL agent, benchmark, local-model, formal/simulation feedback, and forum/issue discussion sources.
+- Added `docs/paper_notes/recent_research_radar_20260628.md`.
+- Added `docs/paper_notes/community_discussions.md`.
+- Updated paper indexes.
+
+Result:
+
+- The repository now tracks a wider set of 2025-2026 candidates, including Verilog-Evolve, HDLFORGE, VeriPilot, ACE-RTL, LLM4Cov, SpecLoop, CoverAssert, CVDP, SiliconMind-v1, and broader survey/benchmark work.
+
+Blocked conclusions:
+
+- These sources are not yet deeply read or reproduced.
+- Forum discussion signals are practical hints, not peer-reviewed evidence.
+
+Next:
+
+- Write focused notes for Verilog-Evolve and HDLFORGE.
+
 ## Template
 
 Date:

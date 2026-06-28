@@ -58,6 +58,24 @@ Continuity schema: 0.1
 
 - Once `iverilog` is available, compare the Verilog testbench cases against the oracle truth table.
 
+## 2026-06-28 - Recent RTL Agent Literature Is Broader Than The First Core Set
+
+### Key Understanding
+
+- The field is moving beyond "generate Verilog with an LLM" into structured harnesses, verification feedback, skill evolution, local/no-API deployment, and benchmark design.
+- The next most relevant items are Verilog-Evolve, HDLFORGE, VeriPilot, CVDP, LLM4Cov, and SpecLoop.
+- Public forum discussion is thin, but GitHub issue threads expose practical failure modes: agent loops, token blowups, syntax issues, and setup friction.
+
+### Decisions
+
+- Keep a radar document separate from finished paper notes.
+- Treat GitHub issue signals as practical workflow evidence, not academic conclusions.
+
+### Follow-ups
+
+- Write focused notes for Verilog-Evolve and HDLFORGE before chasing more broad search.
+- Add repair limits and stop conditions to prompt/skill contracts.
+
 ## 2026-06-27 - Separate Repo, Shared Method Bridge
 
 ### Key Understanding

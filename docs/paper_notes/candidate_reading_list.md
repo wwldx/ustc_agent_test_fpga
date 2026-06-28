@@ -4,6 +4,8 @@ This list starts with papers and repositories that are directly relevant to Veri
 
 ## Core
 
+For a broader recent scan, see `recent_research_radar_20260628.md`.
+
 ### VerilogCoder: Autonomous Verilog Coding Agents with Graph-based Planning and Abstract Syntax Tree (AST)-based Waveform Tracing Tool
 
 - Source: https://arxiv.org/abs/2408.08927
@@ -40,6 +42,32 @@ This list starts with papers and repositories that are directly relevant to Veri
 - Code: https://github.com/stable-lab/MAGE
 - Initial reason to read: open multi-agent RTL-generation architecture and benchmark comparison.
 - Repro question: which components can be replaced by Claude Code/Codex without losing verification discipline?
+
+## Next Radar Items
+
+### Verilog-Evolve
+
+- Source: https://arxiv.org/abs/2605.19754
+- Initial reason to read: skill evolution for Verilog generation; closely related to Codex/Claude skill design.
+- Repro question: can "evolved skill" be represented as a small local deterministic prompt/skill contract?
+
+### HDLFORGE
+
+- Source: https://arxiv.org/abs/2603.02304
+- Initial reason to read: cost-aware small-model-first workflow with escalation.
+- Repro question: can we use deterministic checks and human escalation before trying local model serving?
+
+### VeriPilot
+
+- Source: https://github.com/YihanWn/VeriPilot.git
+- Initial reason to read: very recent golden-model and CDFG-assisted repair workflow.
+- Repro question: can its golden-model idea map to the toy Python oracle path?
+
+### LLM4Cov
+
+- Source: https://arxiv.org/abs/2602.16953
+- Initial reason to read: verification coverage rather than RTL generation; aligned with evidence gates.
+- Repro question: can coverage/evidence summaries become a deterministic skill later?
 
 ## Comparison Axes
 

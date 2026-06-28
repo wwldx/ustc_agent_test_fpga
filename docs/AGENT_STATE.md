@@ -22,11 +22,15 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 - Summarized ChipMATE in `docs/paper_notes/chipmate.md`; current conclusion is to borrow the dual-agent/reference-model idea, not to run full local-model inference on the current MacBook.
 - Scaffolded the first executable toy loop under `experiments/toy_iverilog_loop/`.
 - Added a tiny Python reference model for the toy mux2 loop under `experiments/toy_iverilog_loop/oracle/`.
+- Added recent research/community radar docs:
+  - `docs/paper_notes/recent_research_radar_20260628.md`
+  - `docs/paper_notes/community_discussions.md`
 
 ## Next
 
 - Run `experiments/toy_iverilog_loop/scripts/run_local_check.sh` on a machine with `iverilog` / `vvp`.
 - Run the Python oracle tests on each checkout; later connect oracle output to the Verilog simulation evidence after `iverilog` is available.
+- Read the next radar items in order: Verilog-Evolve, HDLFORGE, VeriPilot, then CVDP / LLM4Cov / SpecLoop as needed.
 - Clone or inspect `NVlabs/VerilogCoder` only after choosing a runner with enough disk and `iverilog`.
 - Run the smallest toy simulation loop before full VerilogCoder reproduction.
 - Decide whether the first executable experiment should use VerilogCoder directly or a small local toy loop that only runs `iverilog`.
@@ -50,6 +54,7 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 - 2026-06-28 `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh` was run in a temp copy on the current MacBook -> `status=tool_missing`, `missing=iverilog`, `blocked_claims=simulation_not_run`.
 - 2026-06-28 `python3 -m unittest tests/test_mux2_oracle.py` -> 4 tests passed.
 - 2026-06-28 `python3 experiments/toy_iverilog_loop/oracle/mux2_oracle.py` printed the 8-row mux2 truth table.
+- 2026-06-28 recent radar was built from public search results and source links; no PDFs, model weights, or upstream repositories were downloaded.
 - 2026-06-27 `bash scripts/check_repo_safety.sh` passed.
 - 2026-06-27 `bash scripts/doctor.sh` ran on the first MacBook checkout: Git, Python 3.14, and Node are available; `iverilog`, Verilator, and Yosys are missing.
 - Initial files are scaffolded only; no Verilog agent experiment has been run yet.
