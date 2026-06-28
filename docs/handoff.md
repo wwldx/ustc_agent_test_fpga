@@ -4,15 +4,15 @@ Continuity schema: 0.1
 
 ## Current Status
 
-Initial scaffold is in place. No experiment has been run yet.
+Initial scaffold is in place. VerilogCoder and Agentic Frontier have been summarized. No simulation experiment has been run yet.
 
 ## Most Useful Next Step
 
-Start with a paper-to-experiment loop:
+Continue the paper-to-experiment loop:
 
-1. Read the local VerilogCoder PDF and summarize its workflow in `docs/paper_notes/verilogcoder.md`.
-2. Inspect `NVlabs/VerilogCoder` through the `third_party` workflow.
-3. Run the smallest safe example that only requires local simulation.
+1. Summarize ChipMATE for local/no-API lessons.
+2. Choose a runner with enough disk and `iverilog`.
+3. Run the smallest safe toy example that only requires local simulation.
 4. Record exact commands, outputs, failures, and next actions in `docs/experiment_log.md`.
 
 ## Before Handing Off
@@ -28,3 +28,4 @@ Start with a paper-to-experiment loop:
 - Paper PDFs are stored outside Git.
 - No hardware execution path is approved yet.
 - First MacBook environment check found Git, Python 3.14, and Node, but no `iverilog`, Verilator, or Yosys.
+- Current MacBook should remain notes-only unless the user explicitly approves installing toolchains.

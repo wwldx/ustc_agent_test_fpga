@@ -2,6 +2,38 @@
 
 Continuity schema: 0.1
 
+## 2026-06-28 - Keep Current MacBook Notes-Only Until A Runner Is Chosen
+
+Decision: Do not install Verilog toolchains or clone large experiment dependencies on the current MacBook by default.
+
+Reason:
+
+- The user reported limited free disk space on the current Mac.
+- The useful work available now is paper analysis, workflow design, prompt contracts, skill contracts, and handoff preparation.
+- The first executable loop only needs a machine with `iverilog` / `vvp`; it can run later on Mac mini, Linux, or WSL2.
+
+Impact:
+
+- Current MacBook remains the coordination and writing machine.
+- Mac mini / lab Linux / WSL2 should be preferred for simulation runs.
+- Before installing anything on a runner, run `bash scripts/doctor.sh` and record the result.
+
+## 2026-06-28 - Start With A Toy Structured Loop Before Full VerilogCoder
+
+Decision: The first executable experiment should be a tiny simulation-only toy loop, not full VerilogCoder or CVDP.
+
+Reason:
+
+- VerilogCoder has API and multi-agent complexity.
+- Agentic Frontier shows naive agent scaffolding can degrade performance and crash.
+- A toy loop is enough to validate the core method: discover files, plan, edit, compile, simulate, summarize evidence.
+
+Impact:
+
+- `prompts/verilog_agent_structured_loop.md` becomes the first prompt contract.
+- `skills/verilog_compile_check_contract.md` defines the deterministic verification boundary.
+- Full VerilogCoder reproduction is deferred until the toy loop and toolchain runner are stable.
+
 ## 2026-06-27 - Keep Verilog Agent Work In A Separate Repository
 
 Decision: Use this repository for Verilog/RTL agent experiments instead of placing code directly inside the graduation-project directory.

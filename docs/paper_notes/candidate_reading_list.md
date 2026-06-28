@@ -8,12 +8,14 @@ This list starts with papers and repositories that are directly relevant to Veri
 
 - Source: https://arxiv.org/abs/2408.08927
 - Code: https://github.com/NVlabs/VerilogCoder
+- Status: summarized in `verilogcoder.md`.
 - Initial reason to read: baseline "Verilog coding agent" workflow; includes planning, simulation, and repair ideas.
 - Repro question: can the smallest example run locally without leaking API keys into the repo?
 
 ### Exploring the Agentic Frontier of Verilog Code Generation
 
 - Source: https://arxiv.org/abs/2603.19347
+- Status: summarized in `agentic_frontier.md`.
 - Initial reason to read: recent evidence on agentic wrappers for Verilog generation, including failure modes.
 - Repro question: what parts are evaluation methodology versus reusable engineering workflow?
 
@@ -46,3 +48,5 @@ This list starts with papers and repositories that are directly relevant to Veri
 - Evidence trace: what is logged, what is reproducible, and what remains a model claim.
 - Hardware boundary: simulation-only versus hardware-adjacent execution.
 - Transfer value for the graduation project: deterministic skill, credibility gate, human review, or presentation story.
+
+Current synthesis is in `comparison_matrix.md`.

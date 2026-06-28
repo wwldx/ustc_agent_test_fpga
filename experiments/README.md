@@ -17,3 +17,17 @@ Each experiment directory should stay small and reproducible.
 - `chipmate_study/`: study local-model and reference-model ideas.
 - `lego_skill_study/`: extract skill-contract ideas from LEGO.
 - `mage_study/`: compare MAGE-style multi-agent workflow.
+
+## First Executable Experiment
+
+The first executable experiment should be smaller than any full paper reproduction:
+
+```text
+toy spec + RTL + testbench
+-> structured prompt
+-> iverilog compile
+-> vvp simulation
+-> compact evidence report
+```
+
+Run this on Mac mini, lab Linux, or WSL2 after `bash scripts/doctor.sh` confirms `iverilog` is available.

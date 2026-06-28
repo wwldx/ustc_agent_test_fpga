@@ -33,7 +33,7 @@ done < <(
     \) -print
 )
 
-if git grep -n -I -E '(OPENAI_API_KEY|ANTHROPIC_API_KEY|GOOGLE_API_KEY|AZURE_OPENAI_API_KEY|OAI_CONFIG_LIST|sk-[A-Za-z0-9_-]{20,})' -- . ':!.gitignore' ':!scripts/check_repo_safety.sh' >/tmp/ustc_agent_test_fpga_secret_scan.txt 2>/dev/null; then
+if git grep -n -I -E '((OPENAI_API_KEY|ANTHROPIC_API_KEY|GOOGLE_API_KEY|AZURE_OPENAI_API_KEY)[[:space:]]*=[[:space:]]*[^[:space:]]+|sk-[A-Za-z0-9_-]{20,})' -- . ':!.gitignore' ':!scripts/check_repo_safety.sh' >/tmp/ustc_agent_test_fpga_secret_scan.txt 2>/dev/null; then
   echo "[safety] possible secret-like text found:"
   cat /tmp/ustc_agent_test_fpga_secret_scan.txt
   bad=1

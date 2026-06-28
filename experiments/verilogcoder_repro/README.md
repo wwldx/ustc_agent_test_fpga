@@ -22,7 +22,8 @@ Source:
 
 ## Next Steps
 
-1. Read the paper and write `docs/paper_notes/verilogcoder.md`.
-2. Inspect the upstream repo through `third_party/README.md`.
-3. Record exact install and run commands here.
-4. Run the smallest example and log results in `docs/experiment_log.md`.
+1. Paper note is done: `docs/paper_notes/verilogcoder.md`.
+2. Do not install or clone full dependencies on the current MacBook unless explicitly approved.
+3. On a runner with enough disk and `iverilog`, inspect the upstream repo through `third_party/README.md`.
+4. Record exact install and run commands here.
+5. Run a toy simulation loop before attempting full VerilogCoder.

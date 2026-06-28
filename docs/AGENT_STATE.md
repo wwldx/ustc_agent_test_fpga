@@ -12,12 +12,19 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 - Set the public-repository boundary: no secrets, no PDFs, no raw data, no private IP, and no hardware credentials.
 - Split the first study tracks into VerilogCoder reproduction, Agentic Frontier reading, ChipMATE study, LEGO skill study, and MAGE study.
 - Added bridge, handoff, experiment log, sync guide, and repository safety scripts.
+- Summarized the two local PDFs that can be studied without installing a toolchain:
+  - `docs/paper_notes/verilogcoder.md`
+  - `docs/paper_notes/agentic_frontier.md`
+- Added the cross-paper synthesis `docs/paper_notes/comparison_matrix.md`.
+- Added `docs/toolchain_notes.md`, explaining `iverilog`, `vvp`, Verilator, Yosys, storage risk, and why the current MacBook should stay notes-only for now.
+- Drafted a simulation-only structured prompt in `prompts/verilog_agent_structured_loop.md`.
+- Drafted a deterministic skill contract in `skills/verilog_compile_check_contract.md`.
 
 ## Next
 
-- Write focused notes for the two local PDFs already downloaded outside this repository: VerilogCoder and Agentic Frontier.
-- Clone or inspect `NVlabs/VerilogCoder` under a controlled `third_party` workflow, then run the smallest non-hardware example.
-- Check local tool availability: Python, `iverilog`, Verilator, and optional simulator tooling.
+- Read and summarize ChipMATE next, because it is most relevant to no-API / local-model constraints.
+- Clone or inspect `NVlabs/VerilogCoder` only after choosing a runner with enough disk and `iverilog`.
+- Run the smallest toy simulation loop before full VerilogCoder reproduction.
 - Decide whether the first executable experiment should use VerilogCoder directly or a small local toy loop that only runs `iverilog`.
 - After classmates join the GitHub repository, consider switching the repository to private before adding any hardware-specific scripts or logs.
 
@@ -30,6 +37,10 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 
 ## Verification
 
+- 2026-06-28 local PDFs inspected:
+  - VerilogCoder PDF size about 730 KB, 8 pages.
+  - Agentic Frontier PDF size about 194 KB, 9 pages.
+- 2026-06-28 paper notes were created from local PDFs; no toolchain installation, third-party clone, model download, or simulation run was performed.
 - 2026-06-27 `bash scripts/check_repo_safety.sh` passed.
 - 2026-06-27 `bash scripts/doctor.sh` ran on the first MacBook checkout: Git, Python 3.14, and Node are available; `iverilog`, Verilator, and Yosys are missing.
 - Initial files are scaffolded only; no Verilog agent experiment has been run yet.
