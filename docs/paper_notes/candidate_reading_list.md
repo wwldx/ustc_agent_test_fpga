@@ -47,13 +47,13 @@ For a broader recent scan, see `recent_research_radar_20260628.md`.
 
 ### Verilog-Evolve
 
-- Source: https://arxiv.org/abs/2605.19754
+- Source: https://arxiv.org/abs/2605.26498
 - Initial reason to read: skill evolution for Verilog generation; closely related to Codex/Claude skill design.
 - Repro question: can "evolved skill" be represented as a small local deterministic prompt/skill contract?
 
 ### HDLFORGE
 
-- Source: https://arxiv.org/abs/2603.02304
+- Source: https://arxiv.org/abs/2603.04646
 - Initial reason to read: cost-aware small-model-first workflow with escalation.
 - Repro question: can we use deterministic checks and human escalation before trying local model serving?
 

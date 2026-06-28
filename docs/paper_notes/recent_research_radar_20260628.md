@@ -26,8 +26,8 @@ The recent field is moving in several directions:
 | Priority | Item | Year | Link | Why it matters |
 | --- | --- | ---: | --- | --- |
 | P0 | VeriPilot | 2026 | https://github.com/YihanWn/VeriPilot.git | Very recent agentic workflow using golden models, CDFG analysis, and localized bug repair. |
-| P0 | Verilog-Evolve | 2026 | https://arxiv.org/abs/2605.19754 | Skill evolution for Verilog generation; directly related to local Codex/Claude skill design. |
-| P0 | HDLFORGE | 2026 | https://arxiv.org/abs/2603.02304 | Uses smaller/faster models first, escalates harder cases; useful cost/control pattern. |
+| P0 | Verilog-Evolve | 2026 | https://arxiv.org/abs/2605.26498 | Skill evolution for Verilog generation; directly related to local Codex/Claude skill design. |
+| P0 | HDLFORGE | 2026 | https://arxiv.org/abs/2603.04646 | Uses smaller/faster models first, escalates harder cases; useful cost/control pattern. |
 | P0 | ACE-RTL | 2026 | https://arxiv.org/abs/2602.10218 | RTL-specialized LLM plus agentic context evolution; related to local/open model strategy. |
 | P1 | LLM4Cov | 2026 | https://arxiv.org/abs/2602.16953 | Execution-aware agentic learning for testbench coverage; shifts focus from RTL generation to verification quality. |
 | P1 | SpecLoop | 2026 | https://arxiv.org/abs/2603.02895 | RTL-to-specification with formal feedback; useful for evidence-bound reverse reasoning. |
