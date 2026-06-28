@@ -95,6 +95,30 @@ Next:
 - Sync to the real repository and run safety checks.
 - On a runner with `iverilog`, execute `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh`.
 
+## 2026-06-28 - Python Oracle For Toy mux2
+
+Goal: reduce ChipMATE's Python reference-model idea to a tiny deterministic artifact that runs on the current MacBook.
+
+Actions:
+
+- Added `experiments/toy_iverilog_loop/oracle/mux2_oracle.py`.
+- Added `tests/test_mux2_oracle.py`.
+- Updated toy loop README.
+
+Result:
+
+- The toy loop now has a Verilog path and an independent Python reference path.
+- `python3 -m unittest tests/test_mux2_oracle.py` passed 4 tests.
+- `python3 experiments/toy_iverilog_loop/oracle/mux2_oracle.py` printed the 8-row truth table.
+
+Blocked conclusions:
+
+- The oracle has not yet been compared against real Verilog simulation output because `iverilog` is still missing on the current MacBook.
+
+Next:
+
+- On a runner with `iverilog`, compare simulation cases against the oracle truth table.
+
 ## Template
 
 Date:

@@ -57,6 +57,7 @@ Run and test commands for each experiment are intentionally recorded inside that
 - A Verilog-agent comparison matrix has been added.
 - Toolchain notes for `iverilog`, Verilator, and Yosys are available.
 - A simulation-only structured prompt and `verilog_compile_check` skill contract are drafted.
+- A Python reference-model oracle and unit test have been added for the toy mux2 loop.
 - The current MacBook is kept notes-only; toy simulation loops should run on Mac mini, lab Linux, or WSL2 first.
 
 ## Collaboration Rule

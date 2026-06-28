@@ -50,6 +50,22 @@ Impact:
 - `experiments/toy_iverilog_loop/` becomes the first stepping stone.
 - A future second step can add a small Python oracle before any local-model deployment.
 
+## 2026-06-28 - Add A Python Oracle Before Model-Based Dual Agents
+
+Decision: Implement a tiny deterministic Python oracle for the mux2 toy loop before attempting any LLM-based Python reference-model agent.
+
+Reason:
+
+- The ChipMATE idea should be reduced to a testable local baseline first.
+- A deterministic oracle can run on the current MacBook without `iverilog`, model weights, vLLM, or API calls.
+- It gives future agents a compact reference table rather than a vague behavioral claim.
+
+Impact:
+
+- `experiments/toy_iverilog_loop/oracle/mux2_oracle.py` is the first reference-model artifact.
+- `tests/test_mux2_oracle.py` becomes the first Python test in the side repository.
+- Future work can compare RTL simulation output against oracle output once `iverilog` is available.
+
 ## 2026-06-27 - Keep Verilog Agent Work In A Separate Repository
 
 Decision: Use this repository for Verilog/RTL agent experiments instead of placing code directly inside the graduation-project directory.

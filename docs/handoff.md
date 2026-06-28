@@ -4,16 +4,16 @@ Continuity schema: 0.1
 
 ## Current Status
 
-Initial scaffold is in place. VerilogCoder, Agentic Frontier, and ChipMATE have been summarized. A toy `iverilog` loop is scaffolded, but no simulation experiment has been run yet.
+Initial scaffold is in place. VerilogCoder, Agentic Frontier, and ChipMATE have been summarized. A toy `iverilog` loop and a tiny Python oracle are scaffolded, but no Verilog simulation experiment has been run yet.
 
 ## Most Useful Next Step
 
 Continue the paper-to-experiment loop:
 
-1. Choose a runner with enough disk and `iverilog`.
-2. Run `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh`.
-3. Record exact commands, outputs, failures, and next actions in `docs/experiment_log.md`.
-4. Add a tiny Python oracle after the mux2 loop passes.
+1. Run `python3 -m unittest tests/test_mux2_oracle.py` on any checkout.
+2. Choose a runner with enough disk and `iverilog`.
+3. Run `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh`.
+4. Record exact commands, outputs, failures, and next actions in `docs/experiment_log.md`.
 
 ## Before Handing Off
 

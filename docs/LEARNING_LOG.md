@@ -41,6 +41,23 @@ Continuity schema: 0.1
 - Run the toy loop on Mac mini / Linux / WSL2 after `iverilog` is available.
 - Add a Python oracle as the next small step after the toy loop passes.
 
+## 2026-06-28 - Deterministic Oracle Before LLM Reference Agent
+
+### Key Understanding
+
+- ChipMATE's Python-agent idea can be usefully approximated by a deterministic Python reference model before adding any model-serving complexity.
+- This gives a clean evidence contract: the oracle defines expected behavior, and later Verilog simulation can be compared against it.
+- The same pattern maps back to the graduation project: deterministic physical/theory checks should exist before an LLM produces stronger suggestions.
+
+### Decisions
+
+- Add `experiments/toy_iverilog_loop/oracle/mux2_oracle.py`.
+- Add a unit test so the oracle itself has a verification boundary.
+
+### Follow-ups
+
+- Once `iverilog` is available, compare the Verilog testbench cases against the oracle truth table.
+
 ## 2026-06-27 - Separate Repo, Shared Method Bridge
 
 ### Key Understanding

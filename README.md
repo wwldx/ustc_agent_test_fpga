@@ -57,6 +57,7 @@ bash scripts/doctor.sh
 - 已整理 Verilog agent 横向比较矩阵。
 - 已写 `iverilog` / Verilator / Yosys 工具链说明。
 - 已草拟 simulation-only 的结构化 prompt 和 `verilog_compile_check` skill 合约。
+- 已为 toy mux2 loop 增加 Python reference-model oracle 和单元测试。
 - 当前 MacBook 不安装工具链；后续优先在 Mac mini、实验室 Linux 或 WSL2 上跑 toy simulation loop。
 
 ## 协作规则
