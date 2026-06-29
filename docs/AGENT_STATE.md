@@ -30,6 +30,10 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
   - `docs/paper_notes/hdlforge.md`
 - Added `docs/direction_review_20260628.md`; conclusion is to refine the direction with validation-gated skills and escalation limits, not pivot away from the toy/evidence-first path.
 - Added `docs/skill_registry_design.md`.
+- Imported classmate fork branch `liujianyu20021122:patch-1` proposal commit `0e59e72` as `docs/proposals/hsg_rtl_generation_plan_liujianyu.md`; fork `main` was behind upstream and was not merged.
+- Added collaborator workflow documentation and a helper script:
+  - `docs/collaboration_guide_for_classmates.md`
+  - `scripts/collab_submit.sh`
 
 ## Next
 
@@ -41,6 +45,8 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 - Run the smallest toy simulation loop before full VerilogCoder reproduction.
 - Decide whether the first executable experiment should use VerilogCoder directly or a small local toy loop that only runs `iverilog`.
 - After classmates join the GitHub repository, consider switching the repository to private before adding any hardware-specific scripts or logs.
+- Ask collaborators to push upstream feature branches with `scripts/collab_submit.sh` instead of accumulating work only in personal forks.
+- Review the HSG-RTL proposal and reduce it to the next small deterministic artifact before implementation, such as a minimal graph schema or interface-contract schema.
 
 ## Open Questions
 
@@ -62,6 +68,7 @@ Build a clean collaboration repository for Verilog/RTL agent experiments, with e
 - 2026-06-28 `python3 experiments/toy_iverilog_loop/oracle/mux2_oracle.py` printed the 8-row mux2 truth table.
 - 2026-06-28 recent radar was built from public search results and source links; no PDFs, model weights, or upstream repositories were downloaded.
 - 2026-06-28 Verilog-Evolve and HDLFORGE local PDFs were analyzed from `临时存放/`; no new toolchain, model weights, or upstream repositories were downloaded.
+- 2026-06-29 fetched classmate fork branches `main` and `patch-1`. Fork `main` is at `f06177c` and would remove the later upstream direction-review work if merged. Branch `patch-1` adds one proposal file, imported as a proposal document.
 - 2026-06-27 `bash scripts/check_repo_safety.sh` passed.
 - 2026-06-27 `bash scripts/doctor.sh` ran on the first MacBook checkout: Git, Python 3.14, and Node are available; `iverilog`, Verilator, and Yosys are missing.
 - Initial files are scaffolded only; no Verilog agent experiment has been run yet.

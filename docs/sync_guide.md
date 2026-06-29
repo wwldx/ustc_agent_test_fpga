@@ -20,6 +20,24 @@ git pull --ff-only
 git status --short --branch
 ```
 
+For classmates with collaborator access, prefer an upstream feature branch rather
+than personal-fork-only work:
+
+```bash
+git switch main
+git pull --ff-only origin main
+git switch -c liujianyu/short-topic-name
+```
+
+Then submit with:
+
+```bash
+bash scripts/collab_submit.sh -m "Describe the change"
+```
+
+See `docs/collaboration_guide_for_classmates.md` for the full fork/upstream
+workflow.
+
 Before handing off:
 
 ```bash

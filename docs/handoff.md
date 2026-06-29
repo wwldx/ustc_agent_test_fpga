@@ -10,6 +10,12 @@ Recent radar docs now list additional 2025-2026 sources and practical GitHub iss
 
 Verilog-Evolve and HDLFORGE have now been summarized; direction review says to keep toy/evidence-first path but add validation-gated skill design and bounded escalation.
 
+Classmate fork branch `patch-1` has been imported as
+`docs/proposals/hsg_rtl_generation_plan_liujianyu.md`. Fork `main` was behind
+upstream and should not be merged as-is. Collaborator workflow is now documented
+in `docs/collaboration_guide_for_classmates.md`, with helper script
+`scripts/collab_submit.sh`.
+
 ## Most Useful Next Step
 
 Continue the paper-to-experiment loop:
@@ -18,6 +24,9 @@ Continue the paper-to-experiment loop:
 2. Choose a runner with enough disk and `iverilog`, or implement the next no-tooling step: compact evidence schema.
 3. Run `bash experiments/toy_iverilog_loop/scripts/run_local_check.sh` on that runner.
 4. Record exact commands, outputs, failures, and next actions in `docs/experiment_log.md`.
+
+For collaboration, ask classmates to create upstream feature branches and run
+`bash scripts/collab_submit.sh -m "Describe the change"` before handoff.
 
 ## Before Handing Off
 

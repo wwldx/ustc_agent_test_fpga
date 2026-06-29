@@ -2,6 +2,29 @@
 
 Continuity schema: 0.1
 
+## 2026-06-29 - Collaborators Should Push Upstream Branches, Not Fork-Only Work
+
+Decision: After a classmate has collaborator access, normal work should happen on
+feature branches in `wwldx/ustc_agent_test_fpga`, with personal forks treated as
+optional staging areas rather than the main handoff path.
+
+Reason:
+
+- Fork-only commits are easy to miss when checking the upstream branch list.
+- A fork `main` can lag behind upstream and accidentally delete newer upstream
+  documents if merged directly.
+- Upstream feature branches make review, pull requests, and handoff visible to
+  both collaborators.
+
+Impact:
+
+- `docs/collaboration_guide_for_classmates.md` documents the fork/upstream
+  distinction and daily workflow.
+- `scripts/collab_submit.sh` checks that `origin` points to the upstream repo,
+  runs the repository safety scan, commits, and pushes a feature branch.
+- The 2026-06-29 classmate `patch-1` work was imported manually as a proposal
+  document; fork `main` was not merged because it was behind upstream.
+
 ## 2026-06-28 - Keep Current MacBook Notes-Only Until A Runner Is Chosen
 
 Decision: Do not install Verilog toolchains or clone large experiment dependencies on the current MacBook by default.

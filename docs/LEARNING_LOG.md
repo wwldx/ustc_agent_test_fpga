@@ -2,6 +2,29 @@
 
 Continuity schema: 0.1
 
+## 2026-06-29 - Fork Commits Need An Explicit Upstream Landing Path
+
+### Key Understanding
+
+- A GitHub fork is a separate copy of the repository. A commit pushed there does
+  not automatically appear in upstream branches.
+- Once a collaborator has write access, the lower-friction route is to clone the
+  upstream repo, work on an upstream feature branch, and open a pull request.
+- Merging a stale fork `main` can look harmless but may remove newer upstream
+  work. Compare branches before importing anything.
+
+### Artifact
+
+- Imported classmate `patch-1` proposal as
+  `docs/proposals/hsg_rtl_generation_plan_liujianyu.md`.
+- Added `docs/collaboration_guide_for_classmates.md`.
+- Added `scripts/collab_submit.sh`.
+
+### Follow-ups
+
+- Send the collaborator guide and script usage to the classmate.
+- Review the HSG-RTL proposal into one small executable next step before coding.
+
 ## 2026-06-28 - Verilog Agent Papers Favor Structured Evidence Over Broad Tooling
 
 ### Key Understanding
